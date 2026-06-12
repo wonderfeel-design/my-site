@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katerina Akhmad — UX Research Portfolio</title>
+<meta name="description" content="Lead UX Researcher · Consumer fintech, mobile & emerging tech · Barcelona. Selected research case studies in fintech, social discovery and AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,320..600;1,6..72,320..560&family=Hanken+Grotesk:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/data.js"></script>
+<script src="assets/theme.js"></script>
+<link id="gfont-Open-Sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&amp;display=swap">
+</head>
+<body style="font-family: &quot;Open Sans&quot;">
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-name"><b>Katerina Akhmad</b><span>UX&nbsp;Research</span></a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#about" class="hide-sm">About</a>
+      <a href="#experience" class="hide-sm">Experience</a>
+      <a href="mailto:ekatakhm@gmail.com" class="nav-cta">Get in touch</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot">●</span>&nbsp; Lead UX Researcher &nbsp;·&nbsp; Fintech · Mobile · Emerging Tech</div>
+        <h1>Decoding user &amp; market signals into <em>effective business solutions.</em></h1>
+        <p class="hero-lede">Mixed-method research across markets, languages and emerging technology — from crypto to AI agents to the metaverse.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn" style="font-family: &quot;Open Sans&quot;">View selected work <span class="ar">→</span></a>
+          <a href="#about" class="btn btn-ghost">About me</a>
+        </div>
+        <div class="hero-meta">
+          <span>Barcelona, Spain</span>
+          <span>EU work authorisation</span>
+          <span>EN · ES · RU</span>
+        </div>
+      </div>
+      <div class="portrait-frame">
+        <div class="tape">portrait.jpg</div>
+        <image-slot id="headshot" class="portrait" shape="rounded" radius="4"
+          placeholder="Drop your headshot"></image-slot>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="stat-band">
+  <div class="stat-band-inner" id="stat-band"></div>
+</section>
+
+<!-- WORK -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Selected case studies</div>
+        <h2>Research that shaped product decisions.</h2>
+      </div>
+      <div class="filters" id="filters"></div>
+    </div>
+    <div class="cases" id="cases"></div>
+  </div>
+</section>
+
+<!-- CAPABILITIES MARQUEE -->
+<section class="marquee" aria-label="Capabilities">
+  <div class="marquee-track" id="marquee"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about" style="border-top:1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">About</div></div>
+    <div class="about-grid">
+      <div>
+        <p class="about-bio" id="bio"></p>
+        <div style="margin-top:38px;">
+          <div class="side-label">Core competencies</div>
+          <div class="comp-list" id="comps"></div>
+        </div>
+      </div>
+      <div>
+        <div class="side-label">Languages</div>
+        <div id="langs"></div>
+        <div class="side-label" style="margin-top:36px;">Education & certification</div>
+        <p style="color:var(--ink-soft); font-size:15.5px; line-height:1.6;">
+          Barcelona 42 — Programming · Product University — Product Management ·
+          Contented — Interaction Design · Scrum Institute — Certified Scrum Master ·
+          Chelyabinsk State University — Management
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience" style="border-top:1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Experience</div><h2>Seven years, fifty markets.</h2></div></div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <div class="eyebrow" style="margin-bottom:18px;">Let's talk</div>
+        <h2>Building something that needs <em>real user evidence?</em></h2>
+      </div>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:ekatakhm@gmail.com"><b>ekatakhm@gmail.com</b><span>Email</span></a>
+        <a class="contact-link" href="https://www.linkedin.com/in/akhmadeeva/" target="_blank" rel="noopener"><b>/in/akhmadeeva</b><span>LinkedIn</span></a>
+        <a class="contact-link" href="https://www.notion.so/katyaakh" target="_blank" rel="noopener"><b>notion.so/katyaakh</b><span>Full portfolio</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <span>© 2026 Katerina Akhmad · Barcelona</span>
+    <span>Cases reflect real engagements. Some client details simplified.</span>
+  </div>
+</footer>
+
+<div id="tweaks-root"></div>
+
+<script>
+(function () {
+  const KA = window.KA, C = KA.categories;
+  const el = (t, c, h) => { const n = document.createElement(t); if (c) n.className = c; if (h != null) n.innerHTML = h; return n; };
+  const catColor = (hue) => `oklch(0.58 0.105 ${hue})`;
+
+  // stat band
+  const sb = document.getElementById("stat-band");
+  KA.profile.stats.forEach(s => {
+    sb.appendChild(el("div", "stat reveal", `<div class="stat-v">${s.value}</div><div class="stat-l">${s.label}</div>`));
+  });
+
+  // bio (two sentences split for rhythm)
+  document.getElementById("bio").textContent = KA.profile.bio;
+
+  // competencies
+  const cw = document.getElementById("comps");
+  KA.profile.competencies.forEach(c => cw.appendChild(el("span", "comp", c)));
+
+  // languages
+  const lw = document.getElementById("langs");
+  KA.profile.languages.forEach(l => lw.appendChild(el("div", "lang-row", `<b>${l.name}</b><span>${l.level}</span>`)));
+
+  // timeline
+  const tw = document.getElementById("timeline");
+  KA.profile.timeline.forEach(t => {
+    tw.appendChild(el("div", "tl-row reveal",
+      `<div class="tl-period">${t.period}</div>
+       <div><div class="tl-role">${t.role}</div><div class="tl-org">${t.org}</div>
+       <div class="tl-note">${t.note}</div></div>`));
+  });
+
+  // ── cases + filters ──
+  const grid = document.getElementById("cases");
+  const fwrap = document.getElementById("filters");
+  let active = "all";
+
+  function renderCards() {
+    grid.innerHTML = "";
+    KA.cases.filter(c => active === "all" || c.category === active).forEach(c => {
+      const cat = C[c.category];
+      const col = catColor(cat.hue);
+      const card = el("a", "case-card reveal in");
+      card.href = `case.html?id=${c.id}`;
+      card.style.setProperty("--cat", col);
+      const metrics = c.metrics.slice(0, 2).map(m =>
+        `<div><div class="cm-v">${m.value}</div><div class="cm-l">${m.label}</div></div>`).join("");
+      const tags = c.tags.slice(0, 3).map(t => `<span class="case-tag">${t}</span>`).join("");
+      card.innerHTML =
+        `<div class="case-thumb">
+           <span class="case-badge">${cat.label}</span>
+           <span class="case-disc">↗</span>
+           <image-slot id="thumb-${c.id}" shape="rounded" radius="30"
+             placeholder="${c.client} — cover image"></image-slot>
+         </div>
+         <div class="case-body">
+           <div class="case-top"><span class="case-client">${c.client}</span><span class="sep">•</span><span>${c.year}</span></div>
+           <h3>${c.title}</h3>
+           <p class="case-summary">${c.summary}</p>
+           <div class="case-metrics">${metrics}</div>
+           <div class="case-foot"><div class="case-tags">${tags}</div></div>
+         </div>`;
+      grid.appendChild(card);
+    });
+  }
+
+  function renderFilters() {
+    const counts = { all: KA.cases.length };
+    Object.keys(C).forEach(k => counts[k] = KA.cases.filter(c => c.category === k).length);
+    const defs = [["all", "All work"]].concat(Object.keys(C).map(k => [k, C[k].label]));
+    defs.forEach(([k, label]) => {
+      const b = el("button", "filter", `${label} <span class="cnt">${counts[k]}</span>`);
+      b.setAttribute("aria-pressed", k === active ? "true" : "false");
+      if (k !== "all") b.style.setProperty("--cat", catColor(C[k].hue));
+      b.onclick = () => { active = k; renderCards();
+        [...fwrap.children].forEach((x, i) => x.setAttribute("aria-pressed", defs[i][0] === active ? "true" : "false")); };
+      fwrap.appendChild(b);
+    });
+  }
+  renderFilters();
+  renderCards();
+
+  // marquee of methods (duplicated for seamless loop)
+  const methods = ["Discovery research", "Jobs-to-be-Done", "Usability testing", "Segmentation",
+    "Journey mapping", "Product–market fit", "Concept validation", "Mixed-method synthesis",
+    "Research ops", "Global fieldwork"];
+  const mq = document.getElementById("marquee");
+  if (mq) {
+    const set = methods.map(m => `<span class="marquee-item">${m}</span>`).join("");
+    mq.innerHTML = set + set;
+  }
+
+  // reveal on scroll
+  if (matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+    const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.12 });
+    document.querySelectorAll(".reveal:not(.in)").forEach(n => io.observe(n));
+  } else {
+    document.querySelectorAll(".reveal").forEach(n => n.classList.add("in"));
+  }
+})();
+</script>
+
+<script src="assets/image-slot.js"></script>
+<script src="assets/signal-field.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="assets/tweaks-panel.jsx"></script>
+<script type="text/babel" src="assets/tweaks-app.jsx"></script>
+</body>
+</html>
